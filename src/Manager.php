@@ -77,6 +77,6 @@ abstract class Manager implements DamInterface
 
     public static function getServiceName(): string
     {
-        return 'dropbox';
+        return strtolower(get_class(new static()));
     }
 }
