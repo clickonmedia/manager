@@ -77,6 +77,6 @@ abstract class Manager implements DamInterface
 
     public static function getServiceName(): string
     {
-        return strtolower(basename(static::getInterfaceType()));
+        return strtolower(class_basename(static::getInterfaceType()));
     }
 }
