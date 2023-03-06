@@ -72,8 +72,5 @@ interface DamInterface
     /**
      * Transforms a file keys to the file format.
      */
-    public function transformFile(
-        mixed $file,
-        bool $createThumbnail = true,
-    ): array;
+    public function transformFile(mixed $file, bool $createThumbnail = true): array;
 }

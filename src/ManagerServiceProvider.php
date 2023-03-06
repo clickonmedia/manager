@@ -30,9 +30,9 @@ class ManagerServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/manager.php', 'manager');
 
         // Register the service the package provides.
-        $this->app->singleton('manager', function ($app, $params) {
-            return new Manager(...$params);
-        });
+        // $this->app->singleton('manager', function ($app, $params) {
+        //     return new Manager(...$params);
+        // });
     }
 
     /**
