@@ -1,0 +1,38 @@
+{
+    "name": "clickonmedia/manager",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "clickonmedia",
+            "email": "tech@clickoniq.com",
+            "homepage": "https://clickoniq.com"
+        }
+    ],
+    "homepage": "https://github.com/clickonmedia/manager",
+    "keywords": ["Laravel", "Manager"],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Clickonmedia\\Manager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Clickonmedia\\Manager\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Clickonmedia\\Manager\\ManagerServiceProvider"
+            ],
+            "aliases": {
+                "Manager": "Clickonmedia\\Manager\\Facades\\Manager"
+            }
+        }
+    }
+}
