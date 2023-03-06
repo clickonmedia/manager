@@ -79,4 +79,9 @@ abstract class Manager implements DamInterface
     {
         return strtolower(class_basename(static::getInterfaceType()));
     }
+
+    public static function new(array $params = []): self
+    {
+        return new static(...$params);
+    }
 }

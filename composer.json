@@ -11,10 +11,6 @@
     ],
     "homepage": "https://github.com/clickonmedia/manager",
     "keywords": ["Media", "Manager"],
-    "require": {
-    },
-    "require-dev": {
-    },
     "autoload": {
         "psr-4": {
             "Clickonmedia\\Manager\\": "src/"

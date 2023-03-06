@@ -30,6 +30,11 @@ interface DamInterface
     public static function getServiceName(): string;
 
     /**
+     * Instantiate the service.
+     */
+    public static function new(): self;
+
+    /**
      * Get the user information from the service.
      */
     public function user(): array;
