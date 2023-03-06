@@ -20,14 +20,14 @@ interface DamInterface
      * Get the namespace of the service name.
      * ie: Clickonmedia\Dropbox\Dropbox
      */
-    public function getInterfaceType(): string;
+    public static function getInterfaceType(): string;
 
     /**
      * Get the service name.
      * ie: Dropbox
      * IMPORTANT: it has to be the same as Facades\PackageName::getFacadeAccessor()
      */
-    public function getServiceName(): string;
+    public static function getServiceName(): string;
 
     /**
      * Get the user information from the service.

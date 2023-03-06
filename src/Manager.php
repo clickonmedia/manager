@@ -70,12 +70,12 @@ abstract class Manager implements DamInterface
         ];
     }
 
-    public function getInterfaceType(): string
+    public static function getInterfaceType(): string
     {
-        return __CLASS__;
+        return get_called_class();
     }
 
-    public function getServiceName(): string
+    public static function getServiceName(): string
     {
         return 'dropbox';
     }
